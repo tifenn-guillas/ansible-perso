@@ -1,0 +1,9 @@
+---
+- name: Install project
+  hosts: all
+  remote_user: tifenn
+  become: yes
+
+  roles:
+    - docker
+    # - docker-compose
